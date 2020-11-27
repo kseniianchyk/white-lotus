@@ -1,0 +1,1219 @@
+@font-face {
+    src: url("../fonts/Marguaritas.ttf");
+    font-family: Marguaritas;
+}
+
+@font-face {
+    src: url("../fonts/MyriadPro-Regular.ttf");
+    font-family: MyriadProRegular;
+}
+
+@font-face {
+    src: url("../fonts/Nunito-Bold.ttf");
+    font-family: NunitoBold;
+}
+
+@font-face {
+    src: url("../fonts/Nunito-ExtraBold.ttf");
+    font-family: NunitoExtraBold;
+}
+
+@font-face {
+    src: url("../fonts/Nunito-Regular.ttf");
+    font-family: NunitoRegular;
+}
+
+@font-face {
+    src: url("../fonts/Nunito-SemiBold.ttf");
+    font-family: NunitoSemiBold;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: rgb(114, 17, 99);
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    width: 131px;
+    transition: .15s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 2px #F137A6;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    background: url("../img/header-bg.png") center;
+    height: 114px;
+}
+
+#header #header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header #header-container #burger {
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: none;
+}
+
+#header #header-container #burger span,
+#header #header-container #burger:before,
+#header #header-container #burger:after {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: rgb(44, 5, 38);;
+    margin: 0 auto;
+}
+#header #header-container #burger span{
+    top: 21px;
+}
+#header #header-container #burger:after,
+#header #header-container #burger:before{
+    content: '';
+}
+#header #header-container #burger:after{
+    bottom: 1px;
+}
+
+#header #header-container #burger:before{
+    top: 11px;
+}
+
+#header #header-container.menu-open span {
+    opacity:0;
+    transition: 0.5s;
+}
+#header #header-container.menu-open #burger:before {
+    transform: rotate(38deg);
+    top: 22px;
+    transition: 0.4s;
+}
+#header #header-container.menu-open #burger:after {
+    transform: rotate(-38deg);
+    bottom: 10px;
+    transition: 0.4s;
+}
+
+#header #header-container #header-content {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header #header-container #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+#header #header-container #menu a {
+    font-size: 13px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    border: 1px solid transparent;
+    transition: text-shadow .3s;
+}
+
+#header #header-container #menu a:hover {
+    color: #721163;
+    border-bottom: 1px solid rgb(114, 17, 99);
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+}
+
+#header #header-container #menu a:last-child {
+    margin-right: 0;
+}
+
+#header #header-container .logo {
+    text-align: center;
+}
+
+.logo a.logo-link {
+    font-size: 55px;
+    font-family: Marguaritas, sans-serif;
+    color: rgb(67, 6, 57);
+}
+
+.logo a.logo-link div {
+    font-size: 10px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(67, 6, 57);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#header #header-container #phone-number {
+    font-size: 14px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#main {
+    background: url("../img/main-bg.png") center;
+    height: 900px;
+    background-size: cover;
+}
+
+#main #main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main #main-container #main-content {
+    width: 500px;
+    margin-top: 155px;
+}
+
+#main #main-container #main-content h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(67, 6, 57);
+    line-height: 1;
+}
+
+#main #main-container #main-content h1 span {
+    font-size: 70px;
+    font-family: Marguaritas, sans-serif;
+    color: rgb(67, 6, 57);
+    font-weight: 500;
+}
+
+#main #main-container #main-content-text {
+    max-width: 443px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.35;
+}
+
+#main #main-container #main-content-choice {
+    margin-top: 58px;
+}
+
+#main #main-container #main-content-choice a {
+    background-color: rgb(114, 17, 99);
+    border-radius: 35px;
+    font-size: 16px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 18px 37px;
+    transition: .15s ease-in-out;
+}
+
+#main #main-container #main-content-choice a:hover {
+    box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+}
+
+#advantages {
+    position: relative;
+}
+
+#advantages #advantages-rose .advaleftrose1 {
+    position: absolute;
+    top: 14px;
+    left: 90px;
+}
+
+#advantages #advantages-rose .advaleftrose2 {
+    position: absolute;
+    top: 240px;
+    left: 30px;
+}
+
+#advantages #advantages-rose .advarightrose1 {
+    position: absolute;
+    top: 127px;
+    right: 403px;
+}
+
+#advantages #advantages-rose .advarightrose2 {
+    position: absolute;
+    top: 383px;
+    right: 0;
+}
+
+#advantages #advantages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 110px;
+    position: relative;
+}
+
+.block-title {
+    margin: 0;
+    font-size: 30px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(67, 6, 57);
+}
+
+#advantages #advantages-container #advantages-first {
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+#advantages #advantages-container #advantages-second {
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    max-width: 426px;
+}
+
+.advantage .advantage-text {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.5;
+}
+
+.advantage .advantage-img {
+    margin-right: 30px;
+}
+
+#rituals {
+    position: relative;
+}
+
+#rituals #rituals-rose .ritualroseleft1 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+#rituals #rituals-rose .ritualroseleft2 {
+    position: absolute;
+    bottom: -33px;
+    left: 232px;
+}
+
+#rituals #rituals-rose .ritualroseright1 {
+    position: absolute;
+    top: 10px;
+    right: 275px;
+}
+
+#rituals #rituals-img {
+    position: absolute;
+    bottom: -74px;
+    right: 0;
+}
+
+#rituals #rituals-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 999;
+    position: relative;
+    padding-top: 35px;
+}
+
+#rituals #rituals-container #rituals-text {
+    font-size: 16px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    width: 550px;
+    margin: 30px 0 70px 0;
+}
+
+#rituals #rituals-container #rituals-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#rituals-content .ritual {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 16.56px 1.44px rgba(44, 5, 38, 0.1);
+    width: 282px;
+}
+
+#rituals-content .ritual .ritual-info {
+    padding: 26px 17px 30px 17px;
+}
+
+#rituals-content .ritual .ritual-info .ritual-title {
+    font-size: 16px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(44, 5, 38);
+    margin-bottom: 17px;
+}
+
+#rituals-content .ritual .ritual-info .ritual-text {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.45;
+    margin-bottom: 20px;
+    height: 90px;
+}
+
+#rituals-content .ritual .ritual-info .ritual-time {
+    font-size: 12px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(114, 17, 99);
+    margin-bottom: 17px;
+}
+
+#rituals-content .ritual .ritual-info .ritual-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rituals-content .ritual .ritual-info .ritual-action .ritual-cost {
+    font-size: 16px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#rituals-content .ritual .ritual-info .ritual-action .btn {
+    padding: 14px 22px;
+}
+
+#present {
+    background: url("../img/gift-bg.png") center;
+    height: 558px;
+    background-size: cover;
+    margin-top: 70px;
+    position: relative;
+}
+
+#present #present-rose .presentroseleft1 {
+    position: absolute;
+    top: 87px;
+    left: 100px;
+}
+
+#present #present-rose .presentroseleft2 {
+    position: absolute;
+    bottom: 118px;
+    left: 0;
+}
+
+#present #present-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+#present #present-container #present-img {
+    margin-left: 92px;
+}
+
+#present #present-container #present-content {
+    padding-top: 168px;
+    width: 373px;
+}
+
+#present #present-container #present-content #present-text {
+    font-size: 18px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    width: 345px;
+    margin: 30px 0;
+}
+
+#present #present-container #present-content .block-title {
+    width: 373px;
+}
+
+#present #present-container #present-content #present-action .btn {
+    width: 232px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#masters {
+    position: relative;
+    margin-bottom: 180px;
+}
+
+#masters #masters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#masters #masters-rose img {
+    position: absolute;
+    top: 0;
+    right: 140px;
+}
+
+#masters #masters-container #masters-content {
+    padding-top: 136px;
+}
+
+#masters #masters-container #masters-content #masters-content-text {
+    font-size: 16px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    width: 505px;
+    margin-top: 30px;
+    margin-bottom: 46px;
+}
+
+#masters #masters-container #masters-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#masters #masters-container #masters-block .master {
+    position: relative;
+}
+
+#masters #masters-container #masters-block .master .master-photo {
+    width: 384px;
+    height: 311px;
+}
+
+#masters #masters-container #masters-block .master .master-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#masters #masters-container #masters-block .master .master-info {
+    width: 251px;
+    height: 70px;
+    background: rgb(255, 255, 255);
+    opacity: 0.749;
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    padding: 15px;
+}
+
+#masters #masters-container #masters-block .master .master-info .master-name {
+    font-size: 18px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#masters #masters-container #masters-block .master .master-info .master-experience {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+.slick-arrow {
+    cursor: pointer;
+}
+
+.slick-prev:before, .slick-next:before {
+    content: none;
+}
+
+#masters #masters-container .masters-arrow-content {
+    width: 90px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+#masters #masters-container .slick-dotted.slick-slider {
+    margin-bottom: 35px;
+}
+
+#masters #masters-container .masters-arrow-content .slick-prev {
+    background: url("../img/slick-prev.png") no-repeat;
+    width: 8px;
+    height: 15px;
+    left: 0;
+    z-index: 999;
+
+}
+
+#masters #masters-container .masters-arrow-content .slick-next {
+    background: url("../img/slick-next.png") no-repeat;
+    width: 8px;
+    height: 15px;
+    right: 0;
+    z-index: 999;
+
+}
+
+#masters #masters-container .masters-arrow-content .slick-active {
+    font-weight: bold;
+}
+
+#masters #masters-container .masters-arrow-content .slick-next:hover, .slick-next:focus {
+    background: url("../img/slick-next.png")
+}
+
+#masters #masters-container .masters-arrow-content .slick-prev:hover, .slick-prev:focus {
+    background: url("../img/slick-prev.png")
+}
+
+#masters #masters-container .masters-arrow-content .slick-dots {
+    bottom: -13px;
+    font-size: 18px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(114, 17, 99);
+}
+
+#gallery {
+    position: relative;
+}
+
+#gallery .galleryrose1 {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: -1;
+}
+
+#gallery .galleryrose2 {
+    position: absolute;
+    bottom: -108px;
+    right: 587px;
+    z-index: -1;
+}
+
+#gallery .galleryroseleft1 {
+    position: absolute;
+    bottom: -110px;
+    left: 200px;
+    z-index: -1;
+}
+
+#gallery #gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gallery #gallery-container #gallery-content #gallery-content-text {
+    font-size: 16px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    width: 677px;
+    margin: 31px 0 46px 0;
+}
+
+#gallery #gallery-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gallery #gallery-slider .gallery-photo a img {
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+#gallery #gallery-slider .gallery-photo a img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#gallery .slick-dotted.slick-slider {
+    margin-bottom: 55px;
+}
+
+#gallery #gallery-slider .gallery-photo {
+    width: 395px;
+    height: 296px;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+#gallery #gallery-slider .gallery-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#gallery #gallery-slider .slick-slide {
+    opacity: 0.5;
+}
+
+#gallery #gallery-slider .slick-slide.slick-active {
+    opacity: 1;
+}
+
+
+#gallery .arrows-content {
+    margin: 0 auto;
+    max-width: 370px;
+    text-align: center;
+    position: relative;
+}
+
+#gallery .arrows-content .slick-dots {
+    top: -11px;
+    bottom: 0;
+    z-index: 1;
+}
+
+#gallery .arrows-content .slick-dots li {
+    content: '';
+    border-width: 1px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
+    margin: 0 7px;
+}
+
+/*#gallery #gallery-slider .slick-dots li:nth-child(-n+4) {*/
+/*    display: none;*/
+/*}*/
+
+#gallery .arrows-content .slick-dots li:hover,
+#gallery .arrows-content .slick-dots li.slick-active {
+    background-color: rgb(114, 17, 99);
+    opacity: 1;
+}
+
+#gallery .arrows-content .slick-dots.slick-active {
+    background-color: rgb(114, 17, 99);
+}
+
+#gallery .arrows-content .slick-dots li button:before {
+    content: none;
+}
+
+#gallery .arrows-content .slick-dots li button:before {
+    content: none;
+}
+
+#gallery .arrows-content .slick-prev {
+    background: url("../img/slick-prev.png") no-repeat;
+    width: 9px;
+    height: 17px;
+    left: 0;
+    z-index: 999;
+}
+
+#gallery .arrows-content .slick-next {
+    background: url("../img/slick-next.png") no-repeat;
+    width: 9px;
+    height: 17px;
+    right: 0;
+    z-index: 999;
+}
+
+#block-question {
+    margin-top: 250px;
+    background: url("../img/questions-bg.png") center;
+    height: 100%;
+    background-size: cover;
+}
+
+#block-question #question-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#block-question #question-container h2 {
+    margin-bottom: 35px;
+}
+
+#block-question #question-container #question-content {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#block-question #question-container #question-content #questions-accordion {
+    max-width: 715px;
+}
+
+#block-question #question-container #question-content #questions-accordion .questions-accordion-info {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+    width: 715px;
+    outline: none;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#block-question #question-container #question-content .questions-accordion-title {
+    font-size: 18px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    background-color: rgb(250, 247, 250);
+    border: none;
+    outline: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#block-question #question-container #question-content .questions-accordion-text,
+#block-question #question-container #question-content .questions-list li {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.5;
+    list-style: unset;
+}
+
+#block-question #question-container #question-content .questions-accordion-info .go-link {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.5;
+    padding-bottom: 30px;
+    background-color: rgb(250, 247, 250);
+}
+
+#block-question #question-container #question-content .questions-accordion-info .go-link a {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(222, 77, 200);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#block-question #question-container #question-content .questions-accordion-text {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #721163;
+    background-color: rgb(250, 247, 250);
+}
+
+ul.questions-list {
+    margin: 0;
+    padding-bottom: 30px;
+    background-color: rgb(250, 247, 250);
+}
+
+#block-question #question-container #question-content .questions-accordion-text span {
+    color: #721163;
+    font-weight: bold;
+}
+
+#block-question #question-container #question-content #call-us {
+    max-width: 464px;
+}
+
+.ui-accordion .ui-accordion-content {
+    border: 0;
+}
+
+.ui-accordion .ui-accordion-header,
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+    margin: 0;
+}
+
+.ui-accordion-header-icon {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 38px;
+    right: -10px;
+    background: url("../img/accordion-back.png") 50% 50% no-repeat;
+    width: 22px;
+    height: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon,
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url("../img/accordion-up.png");
+}
+
+#block-question #question-container #question-content #call-us {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+    width: 465px;
+    margin-top: 20px;
+    padding: 30px 40px;
+    text-align: center;
+    position: relative;
+}
+
+#block-question #question-container #question-content #call-us #call-us-text {
+    font-size: 18px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    margin-bottom: 35px;
+}
+
+#block-question #question-container #question-content #call-us #call-us-text span {
+    color: #721163;
+}
+
+#block-question #question-container #question-content #call-us #call-us-action input {
+    border-width: 1px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    background-color: rgb(245, 239, 243);
+    border-radius: 50px;
+    width: 280px;
+    outline: none;
+    padding: 15px 20px;
+    color: rgb(114, 17, 99);
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+}
+
+#block-question #question-container #question-content #call-us #call-us-action .error {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+#block-question #question-container #question-content #call-us #call-us-action input::placeholder {
+    color: rgb(114, 17, 99);
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+}
+
+#block-question #question-container #question-content #call-us #call-us-action .btn {
+    width: 282px;
+    padding: 16px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+#block-question #question-container #question-content #call-us #call-us-action .collusrose {
+    position: absolute;
+    bottom: 18px;
+    right: 76px;
+}
+
+#block-question #question-container #question-content #call-us #call-us-complete{
+    font-size: 18px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    padding: 60px;
+}
+
+#contact {
+    margin-top: 107px;
+    position: relative;
+}
+
+#contact #contact-rose .contactroseright1 {
+    position: absolute;
+    top: -102px;
+    right: 368px;
+}
+
+#contact #contact-rose .contactroseright2 {
+    position: absolute;
+    top: 204px;
+    right: 220px;
+}
+
+#contact #contact-rose .contactroseright3 {
+    position: absolute;
+    bottom: 10px;
+    right: 253px;
+}
+
+#contact #contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+}
+
+#contact #contact-container #contact-info {
+    max-width: 383px;
+    position: relative;
+}
+
+#contact #contact-container #contact-info .contact-title {
+    font-size: 20px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+    margin-bottom: 15px;
+}
+
+#contact #contact-container #contact-info .contact-content-text {
+    font-size: 16px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#contact #contact-container #contact-info #contact-address {
+    margin-top: 54px;
+    margin-bottom: 70px;
+}
+
+#contact #contact-container #contact-info #contact-content {
+    margin-left: 108px;
+}
+
+#contact #contact-container #contact-info #contact-content img {
+    position: absolute;
+    left: -91px;
+    bottom: -109px;
+}
+
+#contact #contact-container #contact-info #contact-content .contact-content-text {
+    margin-bottom: 40px;
+}
+
+#contact #contact-container #contact-info #contact-address .contact-content-text {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    margin-top: 170px;
+    background-color: rgb(250, 247, 250);
+}
+
+#footer #footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer #footer-container #footer-content {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer #footer-container #footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+#footer #footer-container #footer-social svg {
+    width: 42px;
+    height: 24px;
+    fill: #2c0526;
+}
+
+#footer #footer-container #footer-social path:hover,
+#footer #footer-container #footer-social svg:hover {
+    fill: #b81ea1;
+    -webkit-filter: drop-shadow(3px 5px 5px rgba(184, 30, 161, 0.5));
+}
+
+#footer #footer-container #footer-social .no-hover:hover,
+#footer #footer-container #footer-social .no-hover:hover {
+    fill: #FFFFFF;
+    -webkit-filter: drop-shadow(3px 5px 5px rgba(184, 30, 161, 0.5));
+}
+
+#footer #footer-container #footer-phone {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#footer #footer-container #footer-time {
+    font-size: 16px;
+    font-family: NunitoSemiBold, sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(37, 24, 31, 0.7);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup #popup-container {
+    border-radius: 15px;
+    background: #faf7fa;
+    width: 428px;
+    padding: 36px 60px 60px 60px;
+    position: relative;
+    opacity:1;
+    z-index: 999;
+    text-align: center;
+}
+
+#popup #popup-container #cancel-popup {
+    position: absolute;
+    top: 0;
+    right: -67px;
+    border-radius: 50%;
+    background-color: rgb(250, 247, 250);
+    opacity: 0.702;
+    width: 51px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popup #popup-container #reserve .reserve-input input,
+#popup #popup-container #reserve .reserve-input select {
+    border-width: 1px;
+    border-radius: 50px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    background-color: rgb(250, 247, 250);
+    width: 303px;
+    padding: 17px 21px 14px 21px;
+    margin-top: 24px;
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    outline: none;
+}
+
+#popup #popup-container #reserve .reserve-input select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url('../img/selectchoose.png') no-repeat right center;
+    cursor: pointer;
+}
+
+#popup #popup-container #reserve .reserve-input input::placeholder {
+    font-size: 14px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    background-color: rgb(250, 247, 250);
+}
+
+#popup #popup-container #reserve-button .btn {
+    padding: 16px 57px 14px 57px;
+    width: 196px;
+    margin-top: 60px;
+}
+
+#popup #popup-container .error {
+    font-size: 12px;
+    color: red;
+    display: none;
+    padding-top: 5px;
+}
+
+#popup #popup-container #reserve-complete {
+    display: none;
+    text-align: center;
+}
+
+#popup #popup-container #reserve-complete #reserve-complete-title{
+    font-size: 20px;
+    font-family: NunitoBold, sans-serif;
+    color: rgb(114, 17, 99);
+    margin-bottom: 27px;
+}
+
+#popup #popup-container #reserve-complete #reserve-complete-text{
+    font-size: 18px;
+    font-family: NunitoRegular, sans-serif;
+    color: rgb(44, 5, 38);
+    width: 276px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
