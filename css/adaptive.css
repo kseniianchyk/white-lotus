@@ -1,5 +1,13 @@
-/*1229-1331*/
-@media screen and (max-width: 1331px) {
+/*1342-1500*/
+@media screen and (max-width: 1500px) {
+    #contact #contact-rose .contactroseright2,
+    #contact #contact-rose .contactroseright3 {
+        right: -55px;
+    }
+}
+
+/*1229-1341*/
+@media screen and (max-width: 1341px) {
     #present #present-container #present-img {
         margin-left: 85px;
         width: 700px;
@@ -18,6 +26,15 @@
     #block-question #question-container #question-content #call-us {
         width: 420px;
     }
+
+    #contact #contact-rose .contactroseright2 {
+        display: none;
+    }
+
+    #contact #contact-rose .contactroseright3 {
+        right: 100px;
+        bottom: -65px;
+    }
 }
 
 /*1200-1229*/
@@ -31,12 +48,25 @@
     #question-container,
     #contact-container,
     #footer #footer-container {
-        padding: 0 10px;
+        padding: 0 20px;
+    }
+
+    #footer #footer-container {
+        padding: 20px 20px;
     }
 
     #block-question {
         margin-top: 195px;
     }
+
+    #advantages #advantages-container #advantages-first .advarightrose1 {
+        right: 0;
+    }
+
+    #advantages #advantages-rose .advarightrose2 {
+        display: none;
+    }
+
 
 }
 
@@ -47,12 +77,16 @@
         text-align: center;
     }
 
-    #advantages #advantages-rose .advaleftrose2 {
-        display: none;
+    #present #present-container #present-content .block-title {
+        padding-top: 40px;
     }
 
-    #advantages #advantages-rose .advarightrose2 {
-        top: 464px;
+    #block-question #question-container {
+        padding-top: 50px;
+    }
+
+    #advantages #advantages-rose .advaleftrose2 {
+        display: none;
     }
 
     #advantages #advantages-rose .advarightrose1 {
@@ -61,22 +95,18 @@
 
     #rituals #rituals-container #rituals-content {
         flex-wrap: wrap;
-        width: 72%;
+        width: 600px;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     #rituals-content .ritual {
-        margin-bottom: 25px;
+        margin-bottom: 33px;
     }
 
     #rituals #rituals-container #rituals-text {
         margin: 30px auto 45px auto;
         text-align: center;
-    }
-
-    #rituals #rituals-rose .ritualroseleft2 {
-        left: 0;
     }
 
     #present {
@@ -180,33 +210,41 @@
     }
 
     #main #main-container #main-content-text {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    #header #header-container {
-        justify-content: center;
-    }
-
-    #header #header-container #header-content {
-        width: 510px;
-        margin-right: 28px;
+    #header #header-container .logo {
+        order: -1;
+        margin-left: 0;
     }
 
     #advantages #advantages-container {
-        padding-bottom: 80px;
+        padding-top: 110px;
+        padding-bottom: 55px;
     }
 
     #advantages #advantages-container #advantages-first,
     #advantages #advantages-container #advantages-second {
+        flex-wrap: wrap;
         justify-content: center;
+        margin-top: 10px;
+    }
+
+    .advantage {
+        max-width: 460px;
+        margin-top: 25px;
+    }
+
+    #advantages #advantages-container #advantages-second .advantage-last {
+        width: 460px;
     }
 
     .advantage .advantage-text {
         margin-right: 10px;
     }
 
-    #rituals #rituals-container #rituals-content {
-        width: 80%;
+    #rituals #rituals-rose .ritualroseright1 {
+        right: 0;
     }
 
     #gallery #gallery-container #gallery-content #gallery-content-text {
@@ -227,6 +265,10 @@
         justify-content: center;
     }
 
+    #contact #contact-container #contact-info #contact-content {
+        margin-left: 50px;
+    }
+
     #contact #contact-container #contact-info #contact-content img {
         z-index: -1;
         opacity: .4;
@@ -242,7 +284,7 @@
     }
 
     #footer {
-        margin-top: 100px;
+        margin-top: 85px;
     }
 
     #footer #footer-container {
@@ -275,32 +317,8 @@
         font-size: 25px;
     }
 
-    #main #main-container #main-content-text {
-        font-size: 15px;
-    }
-
     #main #main-container #main-content-choice a {
         font-size: 14px;
-    }
-
-    #advantages #advantages-container {
-        padding-top: 110px;
-        padding-bottom: 55px;
-    }
-
-    #advantages #advantages-container #advantages-first,
-    #advantages #advantages-container #advantages-second {
-        flex-wrap: wrap;
-        margin-top: 0;
-    }
-
-    .advantage {
-        max-width: 460px;
-        margin-top: 25px;
-    }
-
-    #advantages #advantages-container #advantages-second .advantage-last {
-        width: 460px;
     }
 
     .block-title {
@@ -309,12 +327,12 @@
         text-align: center;
     }
 
-    #rituals #rituals-container #rituals-content {
-        width: 87%;
+    #rituals #rituals-rose .ritualroseleft1 {
+        display: none;
     }
 
-    #rituals #rituals-rose .ritualroseright1 {
-        right: 0;
+    #present {
+        margin-top: 50px;
     }
 
     #present #present-container #present-content #present-text {
@@ -338,7 +356,6 @@
 
     #masters #masters-container #masters-block .master .master-info {
         width: 100%;
-        height: 55px;
         padding: 7px;
     }
 
@@ -347,7 +364,7 @@
     }
 
     #masters #masters-container #masters-block .master .master-info .master-experience {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     #masters #masters-rose img {
@@ -373,6 +390,11 @@
         opacity: 1;
     }
 
+    #gallery .galleryrose2 {
+        top: -47px;
+        right: 0;
+    }
+
     #block-question #question-container #question-content #questions-accordion {
         max-width: 545px;
     }
@@ -383,24 +405,24 @@
     }
 
     #block-question #question-container #question-content .questions-accordion-title {
-        font-size: 15px;
+        font-size: 16px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     #block-question #question-container #question-content .questions-accordion-text {
-        font-size: 12px;
+        font-size: 14px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .ui-accordion-header-icon {
-        width: 18px;
-        top: 22px;
+    .ui-icon.iconOpen,
+    .ui-icon.iconClosed {
+        top: 24px;
     }
 
     #block-question #question-container #question-content #call-us #call-us-text {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     #block-question #question-container #question-content #call-us {
@@ -427,10 +449,6 @@
         margin: 20px auto 0 auto;
     }
 
-    #contact #contact-container #contact-info #contact-content {
-        margin-left: 50px;
-    }
-
     #contact #contact-container #contact-info #contact-content .contact-content-text {
         margin-bottom: 20px;
     }
@@ -453,13 +471,60 @@
 @media screen and (max-width: 700px) {
 
     .btn {
-        font-size: 13px;
+        font-size: 14px;
         width: 113px;
     }
 
-
     #header #header-container {
-        flex-wrap: wrap;
+        width: 480px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #header #header-container .logo {
+        order: unset;
+    }
+
+    #header #header-container.menu-open {
+        background-color: rgb(229 223 226);
+    }
+
+    #header #header-container.menu-open #menu {
+        display: block;
+        background-color: rgb(229 223 226);
+        opacity: 87%;
+        z-index: 99999;
+    }
+
+    #header #header-container #menu {
+        display: none;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        padding-top: 90px;
+        background-color: rgb(229 223 226);
+        opacity: 87%;
+    }
+
+    #header #header-container #menu a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    #header #header-container #menu a:hover {
+        border-bottom: transparent;
+    }
+
+    #header #header-container #burger {
+        display: block;
+        z-index: 9999999;
+    }
+
+    #rituals #rituals-container #rituals-content {
+        width: 100%;
     }
 
     #rituals-content .ritual {
@@ -468,16 +533,17 @@
     }
 
     #rituals-content .ritual .ritual-info {
-        padding: 8px 25px;
+        padding: 14px 25px;
+    }
+
+    #rituals-content .ritual .ritual-info .ritual-text {
+        margin-bottom: 10px;
+        height: 100px;
     }
 
     #rituals-content .ritual img {
         height: 250px;
         width: 247px;
-    }
-
-    #rituals-content .ritual .ritual-info .ritual-text {
-        font-size: 13px;
     }
 
     #rituals-content .ritual .ritual-info .ritual-action .ritual-cost {
@@ -488,12 +554,8 @@
         padding: 11px 16px;
     }
 
-    #rituals #rituals-container #rituals-content {
-        width: 95%;
-    }
-
     #present #present-container #present-content #present-action .btn {
-        width: 160px;
+        width: 209px;
         height: 39px;
     }
 
@@ -525,54 +587,7 @@
 /*480-579*/
 @media screen and (max-width: 579px) {
     .block-title {
-        font-size: 23px;
-    }
-
-    #header #header-container {
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #header #header-container.menu-open {
-        background-color: rgb(229 223 226);
-    }
-
-    #header #header-container.menu-open #menu {
-        display: block;
-        background-color: rgb(229 223 226);
-        opacity: 87%;
-        z-index: 99999;
-    }
-
-    #header #header-container #header-content {
-        width: 190px;
-        margin-right: 20px;
-        align-items: center;
-    }
-
-    #header #header-container #burger {
-        display: block;
-    }
-
-    #header #header-container #menu {
-        display: none;
-        position: fixed;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        top: 74px;
-        background-color: rgb(229 223 226);
-        opacity: 87%;
-    }
-
-    #header #header-container #header-content #menu a {
-        display: block;
-        padding: 12px 20px;
-    }
-
-    #header #header-container #header-content #menu a:hover {
-        border-bottom: transparent;
+        font-size: 22px;
     }
 
     #main #main-container #main-content {
@@ -584,38 +599,23 @@
         font-size: 23px;
     }
 
-    #main #main-container #main-content-text {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-    #main #main-container #main-content-choice a {
-        font-size: 13px;
-    }
-
     #rituals #rituals-container #rituals-text {
-        width: auto;
-        font-size: 14px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
-    #rituals-rose, #present-rose, #advantages-rose, #masters-rose, #contact-rose, .galleryroseleft1 {
+    #rituals-rose, #present-rose, #advantages-rose, #masters-rose, #contact-rose, .galleryroseleft1, .advarightrose1, .galleryrose2 {
         opacity: .5;
     }
 
     #rituals-content .ritual img {
-        height: 177px;
+        height: 200px;
         width: 180px;
     }
 
     #rituals-content .ritual .ritual-info .ritual-title {
-        font-size: 14px;
         margin-bottom: 10px;
-    }
-
-    #rituals-content .ritual .ritual-info .ritual-text {
-        font-size: 11px;
-        margin-bottom: 10px;
-        height: auto;
     }
 
     #rituals-content .ritual .ritual-info .ritual-time {
@@ -635,15 +635,6 @@
         padding: 7px 14px;
     }
 
-    .btn {
-        font-size: 11px;
-        width: 90px;
-    }
-
-    #present #present-container #present-content #present-text {
-        font-size: 14px;
-    }
-
     #present #present-rose .presentroseleft2 {
         display: none;
     }
@@ -653,7 +644,7 @@
     }
 
     #masters #masters-container #masters-block .master .master-info {
-        height: 47px;
+        height: 56px;
     }
 
     #masters #masters-container .masters-arrow-content {
@@ -661,8 +652,12 @@
         top: -100px;
     }
 
+    #masters #masters-container .masters-arrow-content .slick-next {
+        right: 21px;
+    }
+
     #masters #masters-container #masters-content #masters-content-text {
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
     }
 
@@ -675,13 +670,17 @@
         height: 198px;
     }
 
+    #gallery .arrows-content .slick-dots {
+        top: -9px;
+    }
+
     #block-question #question-container h2 {
         margin-bottom: 25px;
     }
 
     #block-question #question-container #question-content #questions-accordion,
     #block-question #question-container #question-content #questions-accordion .questions-accordion-info {
-        max-width: 380px;
+        max-width: 412px;
     }
 
     #block-question {
@@ -738,6 +737,16 @@
 
 /*480-479*/
 @media screen and (max-width: 499px) {
+
+    #header #header-container {
+        width: 310px;
+        justify-content: space-around;
+    }
+
+    #header #header-container #phone-number {
+        display: none;
+    }
+
     #rituals-content .ritual {
         width: auto;
         display: block;
@@ -750,6 +759,11 @@
 
     #rituals-content .ritual .ritual-info {
         padding: 10px 55px;
+    }
+
+    #rituals-content .ritual .ritual-info .ritual-time,
+    #rituals-content .ritual .ritual-info .ritual-action .ritual-cost {
+        font-size: 14px;
     }
 
     #present #present-container #present-img {
@@ -784,24 +798,12 @@
 /*320-400*/
 @media screen and (max-width: 400px) {
 
-    .block-title {
-        font-size: 20px;
-    }
-
     #main {
         height: 620px;
     }
 
-    #header #header-container #phone-number {
-        font-size: 10px;
-    }
-
-    #header #header-container #header-content {
-        margin-right: 15px;
-    }
-
     #main #main-container #main-content {
-        width: 198px;
+        width: 292px;
         margin-top: 60px;
     }
 
@@ -811,8 +813,8 @@
     }
 
     #main #main-container #main-content-text {
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.4;
     }
 
     #main #main-container #main-content-choice {
@@ -820,7 +822,7 @@
     }
 
     #main #main-container #main-content-choice a {
-        font-size: 9px;
+        font-size: 12px;
         padding: 14px 29px;
     }
 
@@ -834,8 +836,20 @@
     }
 
     .advantage .advantage-text {
-        margin-right: 10px;
-        font-size: 12px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    #rituals-content .ritual .ritual-info .ritual-text {
+        height: 95px;
+    }
+
+    #rituals-content .ritual .ritual-info {
+        padding: 13px 15px;
+    }
+
+    #rituals-content .ritual img {
+        height: 160px;
     }
 
     #present #present-container #present-content {
@@ -854,11 +868,6 @@
         left: 0;
     }
 
-    #present #present-container #present-content #present-action .btn {
-        width: 140px;
-        height: 33px;
-    }
-
     #masters {
         margin-bottom: 90px;
     }
@@ -868,8 +877,9 @@
     }
 
     #gallery #gallery-container #gallery-content #gallery-content-text {
-        width: 307px;
-        font-size: 15px;
+        width: 100%;
+        padding: 0 20px;
+        font-size: 16px;
     }
 
     #gallery .slick-dotted.slick-slider {
@@ -879,10 +889,6 @@
     #block-question #question-container #question-content #questions-accordion,
     #block-question #question-container #question-content #questions-accordion .questions-accordion-info {
         max-width: 285px;
-    }
-
-    #block-question #question-container #question-content .questions-accordion-title {
-        font-size: 14px;
     }
 
     #block-question #question-container #question-content .questions-list li {

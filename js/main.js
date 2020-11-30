@@ -58,9 +58,15 @@ $(document).ready(() => {
     });
 
     $(function () {
+        let icons = {
+            header: "iconClosed",
+            activeHeader: "iconOpen"
+        };
         $("#questions-accordion").accordion({
             collapsible: true,
             heightStyle: "content",
+            active: 0,
+            icons: icons,
             header: '> .questions-accordion-info > .questions-accordion-title'
         });
     });
@@ -169,7 +175,6 @@ $(document).ready(() => {
     $('#burger').click(() => {
         $('#header-container').toggleClass('menu-open');
     });
-
 
     $('#menu a').click(() => {
         $('#header-container').removeClass('menu-open');
