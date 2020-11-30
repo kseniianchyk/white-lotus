@@ -357,6 +357,7 @@
     #masters #masters-container #masters-block .master .master-info {
         width: 100%;
         padding: 7px;
+        height: 59px;
     }
 
     #masters #masters-container #masters-block .master .master-info .master-name {
@@ -418,7 +419,7 @@
 
     .ui-icon.iconOpen,
     .ui-icon.iconClosed {
-        top: 24px;
+        top: 27px;
     }
 
     #block-question #question-container #question-content #call-us #call-us-text {
@@ -653,7 +654,7 @@
     }
 
     #masters #masters-container .masters-arrow-content .slick-next {
-        right: 21px;
+        right: 5px;
     }
 
     #masters #masters-container #masters-content #masters-content-text {
@@ -872,6 +873,10 @@
         margin-bottom: 90px;
     }
 
+    #masters #masters-container .masters-arrow-content .slick-next {
+        right: 11px;
+    }
+
     #header #header-container #burger {
         width: 33px;
     }
@@ -899,13 +904,14 @@
         padding-bottom: 10px;
     }
 
-    #block-question #question-container #question-content .questions-accordion-info .go-link {
-        padding-bottom: 15px;
+    .ui-icon.iconOpen,
+    .ui-icon.iconClosed {
+        right: -20px;
+        margin-right: 0;
     }
 
-    .ui-accordion-header-icon {
-        right: -25px;
-        width: 14px;
+    #block-question #question-container #question-content .questions-accordion-info .go-link {
+        padding-bottom: 15px;
     }
 
     #block-question #question-container #question-content .questions-accordion-title {
